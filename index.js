@@ -39,55 +39,39 @@ document.getElementById('underline').addEventListener('click', function(event){
 
 
 
-document.getElementById('left').addEventListener('click', function(event){ 
-     if(isClicked){
-         text.style.textAlign = 'left';
-         event.target.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
-         isClicked = false;
-     }else{
-         text.style.textAlign = '';
-         event.target.style.backgroundColor = 'transparent';
-         isClicked = true;
-     }
+document.getElementById('left').addEventListener('click', function(){ 
+    text.style.textAlign = 'left';
+    left.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
+    right.style.backgroundColor = 'transparent';
+    center.style.backgroundColor = 'transparent';
+    justify.style.backgroundColor = 'transparent';
 });
 
 
-document.getElementById('center').addEventListener('click', function(event){
-    if(isClicked){
-        text.style.textAlign = 'center';
-        event.target.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
-        isClicked = false;
-    }else{
-        text.style.textAlign = '';
-        event.target.style.backgroundColor = 'transparent';
-        isClicked = true;
-    }
+document.getElementById('center').addEventListener('click', function(){
+    text.style.textAlign = 'center';
+    center.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
+    left.style.backgroundColor = 'transparent';
+    right.style.backgroundColor = 'transparent';
+    justify.style.backgroundColor = 'transparent';
 });
 
 
-document.getElementById('right').addEventListener('click', function(event){
-    if(isClicked){
-        text.style.textAlign = 'right';
-        event.target.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
-        isClicked = false;
-    }else{
-        text.style.textAlign = '';
-        event.target.style.backgroundColor = 'transparent';
-        isClicked = true;
-    }
+document.getElementById('right').addEventListener('click', function(){
+    text.style.textAlign = 'right';
+    right.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
+    left.style.backgroundColor = 'transparent';
+    center.style.backgroundColor = 'transparent';
+    justify.style.backgroundColor = 'transparent';
 });
 
 
-document.getElementById('justify').addEventListener('click', function(event){
-    if(isClicked){
-        text.style.textAlign = 'justify';
-        event.target.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
-        isClicked = false;
-    }else{
-        text.style.textAlign = '';
-        event.target.style.backgroundColor = 'transparent';
-        isClicked = true;
-    }
+document.getElementById('justify').addEventListener('click', function(){
+    text.style.textAlign = 'justify';
+    justify.style.backgroundColor = 'rgba(128, 128, 128, 0.194)';
+    left.style.backgroundColor = 'transparent';
+    center.style.backgroundColor = 'transparent';
+    right.style.backgroundColor = 'transparent';
 });
 
 
